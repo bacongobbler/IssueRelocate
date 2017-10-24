@@ -104,6 +104,7 @@ def get_labels_from_repo(url):
 	return labels
 
 def get_issues_from_repo(url):
+	# fucking github with its ?state=all query not working
 	response = request("get_open_issues", "%s/issues?state=open" % url)
 	result = response.read()
 	open_issues = json.load(StringIO(result))
