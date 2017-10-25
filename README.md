@@ -1,13 +1,10 @@
 Issue Relocator
 =============
 
-This is a fork of https://github.com/Raizlabs/RZGithubUtils
+This project provides a simple script to copy all issues, comments, labels and milestones from one repository to another.
 
-In addition to the original script, this fork provides also a simple issue copy script to copy a single issue from one repository to another.
-* Usage: <pre>python gh-issue-import-simple.py</pre>
-* Supports private repositories as well
-* Will display the issue in json format and ask you to confirm before copying
-* Copies labels and milestones as well
-* It does **not** copy the issue comments
-* Instead, it is closing the issue in the source repository and adding a referencing comment to the old issue.
+## Usage
 
+```shell
+$ python main.py
+```
